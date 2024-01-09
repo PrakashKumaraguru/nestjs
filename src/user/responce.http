@@ -1,0 +1,29 @@
+### Create users detials for the login form
+Post http://localhost:3000/user/signin
+Content-Type: application/json
+
+{
+    "email":"john@gmail.com",
+    "password":"98231245"
+}
+
+### get specific user data 
+
+GET http://localhost:3000/user/1
+
+### get a muli-data using email
+GET http://localhost:3000/user/?email=prakash@gmail.com
+
+### update a data by using id 
+
+PATCH http://localhost:3000/user/1
+Content-Type: application/json
+
+{
+    "password":"prakash@kumaraguru"
+}
+
+### delete by using id
+DELETE http://localhost:3000/user/3
+
+
